@@ -1,0 +1,149 @@
+.tradingWrapper {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Mazzard", sans-serif;
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-bottom: 28px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Mazzard", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 61px;
+}
+
+.firstWord {
+    display: flex;
+    justify-content: center;
+}
+
+.lastWord {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #6AA9FF, #CB77FF);
+}
+
+.textAfterSlogan {
+    
+    margin-top: 20px;
+    padding: 0 84px;
+    text-align: center;
+    line-height: 25px;
+    font-family: "Mazzard", sans-serif;
+    font-size: 14px;
+    color: #E9E9E9;
+}
+
+.learnMoreButton {
+    margin-top: 40px;
+    width: 190px;
+    height: 60px;
+    background-color: #1556EE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mazzard", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.buttonArrow {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 32px;
+    margin-left: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+}
+
+.bgScheme {
+    width: 100%;
+    height: 272px;
+    background-image: url(/public/img/bgScheme.svg); 
+    background-repeat: no-repeat;
+    background-position: bottom 0px right -220px;
+}
+
+@media (min-width: 500px) {
+
+    .tradingWrapper {
+        max-width: 1170px;
+        background-image: url(/public/img/bgScheme.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 80% right -135px;
+    }
+
+    h1 {
+        margin-left: 28px;
+        align-self: start;
+    }
+
+    .slogan {
+        flex-direction: row;
+        align-self: start;
+        line-height: 49.96px;
+        padding-left: 28px;
+    }
+
+    .slogan::after {
+        content: "";
+            position: absolute;
+            width: 376px;
+            height: 303px;
+            right: -50px;
+            top: -40px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+    }
+
+    .sloganBox {
+        width: 80%;
+        flex-direction: row;
+        align-self: start;
+    }
+
+    .firstWord {
+        display: initial;
+    }
+
+    .textAfterSlogan {
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+        padding-left: 28px;
+        text-align: left;
+    }
+
+    .bgScheme {
+        display: none;
+    }
+}
+

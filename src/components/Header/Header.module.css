@@ -1,0 +1,123 @@
+.header {
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(180deg, #000 65%, transparent);
+}
+
+.headerInner {
+    margin: 0 auto;
+    padding: 40px 28px;
+    width: 100%;
+    max-width: 1117px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-family: "Mazzard", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+}
+
+.navigation {
+    display: none;
+}
+
+.upLine {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 7px;
+}
+
+.underLine {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.headerInner::before {
+    content:"";
+    position: absolute;
+    width: 376px;
+    height: 303px;
+    left: -129px;
+    top: -135px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.headerInner::after {
+    content: "";
+    position: absolute;
+    width: 321.54px;
+    height: 190.77px;
+    left: 35px;
+    top: -30px;
+    background: linear-gradient(180deg, rgba(0, 65, 218, 0.115) 0%, rgba(40, 0, 153, 0.115) 91.72%);
+    filter: blur(80px);
+    border-radius: 2.71815e+07px;
+    transform: rotate(131.65deg);
+}
+
+@media (min-width: 500px) {
+
+
+    .navigation {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navItem {
+        position: initial;
+    }
+
+    .careerButton {
+        width: 170px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mazzard", sans-serif;
+        font-size: 20px;
+        box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+    }
+
+    .upRightArrow {
+        margin-left: 13px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .headerInner::before {
+        content: "";
+        position: absolute;
+        width: 742px;
+        height: 597px;
+        left: -330px;
+        top: -138px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+    }
+
+    .headerInner::after {
+        display: none;
+    }
+
+    
+
+}
+
+
+@media (min-width: 900px) {
+    .navigation {
+            width: 60%;
+        }
+}

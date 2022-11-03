@@ -1,0 +1,80 @@
+.continue {
+    margin-top: -80px;
+    width: 100%;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    font-family: "Mazzard", sans-serif;
+    background-image: url(/public/img/circles.svg);
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse {
+    display: none;
+}
+
+h3 {
+    margin-top: -120px;
+}
+
+.seeCode {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1556EE;
+    display: flex;
+    position: relative;
+}
+
+a {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (min-width: 500px) {
+    h3 {
+        margin-top: -120px;
+    }
+
+    .continue {
+        margin-top: 0;
+        padding-top: 10px;
+        background-position-y: 200px;
+    }
+
+    .continue::after {
+        content: "";
+        position: absolute;
+        width: 1021.54px;
+        height: 800.77px;
+        right: -350px;
+        top: -50px;
+        background: linear-gradient(180deg, rgba(0, 65, 218, 0.115) 0%, rgba(40, 0, 153, 0.115) 91.72%);
+        filter: blur(100px);
+        border-radius: 2.71815e+07px;
+        transform: rotate(131.65deg);
+    }
+}
+
+@media (min-width: 900px) {
+    .mouse {
+        display: flex;
+        margin-top: -120px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-top: initial;
+    }
+}
