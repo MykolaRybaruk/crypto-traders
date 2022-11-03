@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Mazzard';
+  src: url(/public/fonts/Mazzard/MazzardH-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mazzard';
+  src: url(/public/fonts/Mazzard/MazzardH-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #000000;
+  background-image: url(/public/img/bg.svg);
+  background-position: 75% 5%;
+  background-repeat: no-repeat;
+  background-size: 450%;
+}
+
+@media (min-width: 500px) {
+  .App {
+      background-color: #000000;
+      background-image: url(/public/img/bg.svg);
+      background-size: initial;
+      background-position: 0 -25%;
+      background-position-x: center;
+      background-repeat: no-repeat;
+
+    }
+}
